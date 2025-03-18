@@ -1,0 +1,67 @@
+# ----------------------------
+# 项目专用 .gitignore 文件
+# 适用于 DeepSeek 问答助手项目
+# ----------------------------
+
+### 敏感文件 ###
+DEEPSEEKAPI.env  # 包含API密钥的本地环境文件
+*.key            # 其他可能的密钥文件
+*.secret         # 敏感配置文件
+
+### Python开发 ###
+# 字节码缓存
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+
+# 虚拟环境
+venv/
+.env/
+env/
+.env.bak/
+envs/            # Anaconda/Miniconda 环境目录
+conda/           # Conda相关目录
+
+# 包构建产物
+build/
+dist/
+*.egg-info/
+*.egg
+
+### 开发工具 ###
+# IDE配置
+.vscode/         # VS Code配置
+.idea/           # PyCharm配置
+*.iml
+*.code-workspace
+
+# Jupyter笔记本检查点
+.ipynb_checkpoints/
+
+### 日志与临时文件 ###
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+### 操作系统生成文件 ###
+# macOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+### 测试相关 ###
+.coverage
+htmlcov/
+.pytest_cache/
+
+### 文档生成 ###
+docs/_build/
